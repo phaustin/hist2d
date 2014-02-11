@@ -90,15 +90,15 @@ if __name__=="__main__":
 
 
 
-    fig2=plt.figure(1)
-    fig2.clf()
+    fig1=plt.figure(1)
+    fig1.clf()
     x_data=bin_x['data_vec']
     y_data=bin_y['data_vec']
-    axis2=fig2.add_subplot(111)
+    axis2=fig1.add_subplot(111)
     axis2.plot(x_data,y_data,'b.')
     axis2.set_title('scatterplot')
-    fig2.canvas.draw()
-    fig2.savefig('scatter.png')
+    fig1.canvas.draw()
+    fig1.savefig('scatter.png')
     #plt.show()
 
     x_centers=bin_x['bin_centers']
@@ -112,11 +112,11 @@ if __name__=="__main__":
     vmax= 300.
     the_norm=Normalize(vmin=vmin,vmax=vmax,clip=False)
 
-    fig1=plt.figure(1)
-    fig1.clf()
-    axis1=fig1.add_subplot(111)
+    fig3=plt.figure(1)
+    fig3.clf()
+    axis1=fig3.add_subplot(111)
     im=axis1.pcolormesh(x_centers,y_centers,counts,cmap=cmap,norm=the_norm)
-    cb=fig1.colorbar(im,extend='both')
+    cb=fig3.colorbar(im,extend='both')
     axis1.set_title('2d histogram')
-    fig1.canvas.draw()
-    fig1.savefig('histogram.png')
+    fig3.canvas.draw()
+    fig3.savefig('histogram.png')
