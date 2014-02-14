@@ -110,11 +110,12 @@ if __name__=="__main__":
     vmax= 300.
     the_norm=Normalize(vmin=vmin,vmax=vmax,clip=False)
 
-    ## fig3=plt.figure(1)
-    ## fig3.clf()
-    ## axis1=fig3.add_subplot(111)
-    ## im=axis1.pcolormesh(x_centers,y_centers,counts,cmap=cmap,norm=the_norm)
-    ## cb=fig3.colorbar(im,extend='both')
-    ## axis1.set_title('2d histogram')
-    ## fig3.canvas.draw()
-    ## fig3.savefig('histogram.png')
+    fig3=plt.figure(1)
+    fig3.clf()
+    axis1=fig3.add_subplot(111)
+    im=axis1.pcolormesh(x_centers,y_centers,counts,cmap=cmap,norm=the_norm)
+    cb=fig3.colorbar(im,extend='both')
+    axis1.set_title('2d histogram')
+    fig3.canvas.draw()
+    fig3.savefig('histogram.png')
+    

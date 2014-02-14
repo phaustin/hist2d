@@ -167,7 +167,7 @@ def hist_2d(dict bin_xvals,dict bin_yvals):
         for col in range(cols):
             data_list=out_vals[row,col]
             if len(data_list)==0:
-                count_grid[row,col]=np.nan
+                count_grid[row,col]= -1.
             else:
                 count_grid[row,col]=len(data_list)
     out_dict=dict(index_grid=out_vals,count_grid=np.asarray(count_grid))
