@@ -82,9 +82,7 @@ if __name__=="__main__":
     chanx=np.concatenate((chanx,chanxB))
     chany=np.concatenate((chany,chanyB))
 
-    #
-    #
-    #
+
     bin_x=do_bins(chanx,70,0,700,-999,-888)
     bin_y=do_bins(chany,50,-400,0,-999,-888)
 
@@ -112,11 +110,11 @@ if __name__=="__main__":
     vmax= 300.
     the_norm=Normalize(vmin=vmin,vmax=vmax,clip=False)
 
-    fig3=plt.figure(1)
-    fig3.clf()
-    axis1=fig3.add_subplot(111)
-    im=axis1.pcolormesh(x_centers,y_centers,counts,cmap=cmap,norm=the_norm)
-    cb=fig3.colorbar(im,extend='both')
-    axis1.set_title('2d histogram')
-    fig3.canvas.draw()
-    fig3.savefig('histogram.png')
+    ## fig3=plt.figure(1)
+    ## fig3.clf()
+    ## axis1=fig3.add_subplot(111)
+    ## im=axis1.pcolormesh(x_centers,y_centers,counts,cmap=cmap,norm=the_norm)
+    ## cb=fig3.colorbar(im,extend='both')
+    ## axis1.set_title('2d histogram')
+    ## fig3.canvas.draw()
+    ## fig3.savefig('histogram.png')
