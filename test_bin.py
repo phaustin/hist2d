@@ -11,37 +11,37 @@ import matplotlib.pyplot as plt
 
 def makeRandom(meanx=None,stdx=None,meany=None,stdy=None,rho=None,
                numpoints=4000):
-   """
-        return a tuple with two vectors (xvec,yvec) giving the
-        coordinates of numpoints chosen from a two dimensional
-        Gauassian distribution
+    """
+    return a tuple with two vectors (xvec,yvec) giving the
+    coordinates of numpoints chosen from a two dimensional
+    Gauassian distribution
 
-        Parameters
-        ----------
+    Parameters
+    ----------
 
-        meanx: float -- mean in x direction
-        stdx:  float -- standard deviation in x direction
-        meany: float -- mean in y direction
-        stdy:  float -- standar deviation in y direction
-        numpoints:  length of returned xvec and yvec
-        
+    meanx: float -- mean in x direction
+    stdx:  float -- standard deviation in x direction
+    meany: float -- mean in y direction
+    stdy:  float -- standar deviation in y direction
+    numpoints:  length of returned xvec and yvec
 
-        Returns
-        -------
 
-        (xvec, yvec): tuple of ndarray vectors of length numpoints
+    Returns
+    -------
 
-        Example
-        -------
+    (xvec, yvec): tuple of ndarray vectors of length numpoints
 
-        invalues={'meanx':450.,
-                  'stdx':50,
-                  'meany':-180,
-                  'stdy':40,
-                  'rho':0.8}
+    Example
+    -------
 
-        chanx,chany=makeRandom(**invalues)
-        
+    invalues={'meanx':450.,
+              'stdx':50,
+              'meany':-180,
+              'stdy':40,
+              'rho':0.8}
+
+    chanx,chany=makeRandom(**invalues)
+
 
     """
  
